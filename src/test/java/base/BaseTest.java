@@ -14,6 +14,7 @@ public class BaseTest {
     public void setUp() {
         // Configuramos opciones para Chrome
         ChromeOptions options = new ChromeOptions();
+        options.addArguments("--incognito");
         
         /* * TRUCO DE PRO: Detectamos si estamos en GitHub Actions.
          * Si la variable "CI" existe, activamos el modo sin pantalla (headless).
